@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.juanb.aero.Menu">
+
+    <Button
+        android:text="Vuelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btperfil"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btVuelo"
+        android:layout_alignLeft="@+id/btBiblioteca"
+        android:layout_alignStart="@+id/btBiblioteca"
+        android:layout_alignRight="@+id/btBiblioteca"
+        android:layout_alignEnd="@+id/btBiblioteca" />
+
+    <Button
+        android:text="Perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btperfil"
+        android:layout_marginTop="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btVuelo"
+        android:layout_alignStart="@+id/btVuelo"
+        android:layout_alignRight="@+id/btVuelo"
+        android:layout_alignEnd="@+id/btVuelo" />
+
+    <Button
+        android:text="Biblioteca y Entretenimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/btBiblioteca"
+        android:layout_below="@+id/btVuelo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/txCorreo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Log as"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView38"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btperfil"
+        android:layout_toStartOf="@+id/btperfil" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txCorreo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo0"
+        android:layout_below="@+id/btBiblioteca"
+        android:layout_marginTop="74dp"
+        android:id="@+id/imageView2"
+        android:layout_alignLeft="@+id/btBiblioteca"
+        android:layout_alignStart="@+id/btBiblioteca"
+        android:layout_alignRight="@+id/btBiblioteca"
+        android:layout_alignEnd="@+id/btBiblioteca" />
+</RelativeLayout>

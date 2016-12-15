@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ver_millas_ydetalles"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dark"
+    tools:context="com.example.juanb.aero.VerMillasYDetalles">
+
+    <TextView
+        android:text="Ver Millas y Detalle de Vuelo"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Vuelo Actual Hacia: "
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView14" />
+
+    <TextView
+        android:text="Desde:"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView16" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignLeft="@+id/vuelohaciatx"
+        android:layout_alignStart="@+id/vuelohaciatx"
+        android:id="@+id/vuelodesdetx" />
+
+    <TextView
+        android:text="Tiempo estimado:"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView26" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignLeft="@+id/vuelodesdetx"
+        android:layout_alignStart="@+id/vuelodesdetx"
+        android:id="@+id/tiempoestimadotx" />
+
+    <TextView
+        android:text="Clima"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView26"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView28" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView28"
+        android:layout_alignLeft="@+id/tiempoestimadotx"
+        android:layout_alignStart="@+id/tiempoestimadotx"
+        android:id="@+id/climatx" />
+
+    <TextView
+        android:text="Aeropuerto Local:"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView28"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView30" />
+
+    <TextView
+        android:text="Id del vuelo"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vuelohaciatx"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:id="@+id/textView32" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vuelohaciatx"
+        android:layout_alignRight="@+id/vuelohaciatx"
+        android:layout_alignEnd="@+id/vuelohaciatx"
+        android:id="@+id/idvuelotx" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView35"
+        android:layout_alignRight="@+id/vuelohaciatx"
+        android:layout_alignEnd="@+id/vuelohaciatx"
+        android:id="@+id/millasrecorridastx" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView39"
+        android:layout_alignLeft="@+id/millasrecorridastx"
+        android:layout_alignStart="@+id/millasrecorridastx"
+        android:id="@+id/fechatx" />
+
+    <TextView
+        android:text="Fecha:"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView39"
+        android:layout_below="@+id/textView35"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35" />
+
+    <TextView
+        android:text="Aeropuerto Llegada"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView30"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="Millas de recorrido:"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView35"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:text="Estado:"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView39"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView27"
+        android:layout_alignLeft="@+id/fechatx"
+        android:layout_alignStart="@+id/fechatx"
+        android:id="@+id/estadotx" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aeropuertoEntradatx"
+        android:layout_alignBaseline="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignLeft="@+id/millasrecorridastx"
+        android:layout_alignStart="@+id/millasrecorridastx" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aeropuertoSalidatx"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignLeft="@+id/millasrecorridastx"
+        android:layout_alignStart="@+id/millasrecorridastx" />
+
+    <TextView
+        android:text="TextVIew"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vuelohaciatx"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo0"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
